@@ -1,0 +1,72 @@
+/* in java abstraction can be done in two ways
+1 abstract class
+here we can have both abstract and concrete method
+    step 1: create an abstract class with an abstract method and a concrete method
+    step 2: define abstract method in the abstract class
+    step 3: create a subclass that extends the abstract class and implements the abstract method
+    step 4: create an object of the subclass and call the methods to demonstrate abstraction
+    step 5: run the program to see how abstraction works in java.
+2. interface 
+*/
+
+/*abstract class Animal{
+    // Abstract method (does not have a body)
+    public abstract void makesound();
+    public void sleep(){
+        System.out.println("Zzz ........");
+    }
+}
+class Dog extends Animal{
+    public void makesound(){
+        System.out.println("Wolf!.......");
+    }
+}
+class Bird extends Animal{
+    public void makesound(){
+        System.out.println("Chirp!.......");
+    }
+}
+public class AbstractionDemo {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.makesound();
+        d.sleep();
+        Bird b = new Bird();
+        b.makesound();
+        b.sleep();
+    }
+}*/
+
+
+
+
+//wap in java for electeic car 
+/*step 1: create an interface with abstract methods
+step 2: create a class that implements the interface and provides implementation for the abstract methods
+step 3: create an object of the class and call the methods to demonstrate abstraction using interface
+step 4: run the program to see how abstraction works using interface in java.
+step 5: compare abstraction using abstract class and interface to understand the differences and use cases for each.
+step 6: understand that abstract class is used when we want to provide a common base for subclasses and enforce a certain structure, while interface is used when we want to define a contract that classes can implement regardless of their position in the class hierarchy.
+ */
+class car{
+    public void start(){
+        System.out.println("Car is starting ....");
+    }
+    public void stop(){
+        System.out.println("Car is stopping ....");
+    }
+}
+interface ElectricVehicle{
+    void charge();
+    void displayBatteryLevel();
+}
+class ElectricCar implements ElectricVehicle{
+    public void charge(){
+        System.out.println("Electric car is charging ....");
+    }
+    public void displayBatteryLevel(){
+        System.out.println("Battery level is 80% ....");
+    }
+}
+
+

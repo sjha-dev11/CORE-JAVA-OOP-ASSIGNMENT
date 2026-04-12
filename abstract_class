@@ -1,0 +1,56 @@
+// Abstract class is a class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods (methods without a body) that must be implemented by subclasses, as well as concrete methods (methods with a body).
+// In Java, an abstract class is declared using the "abstract" keyword. It can have both abstract and concrete methods. Abstract classes are used to provide a common base for subclasses and to enforce a certain structure on the subclasses.
+// wap in java to demonstrate abstract class by creating an abstract class with an abstract method and a concrete method, then create a subclass that extends the abstract class and implements the abstract method.
+
+
+abstract class Vehicle{
+    // Abstract method (does not have a body)
+    abstract void start();
+    // Concrete method (has a body)
+    void fuelType(){
+        System.out.println("Petrol/Diesel");
+    }
+}
+// Subclass (Car) that extends the abstract class (Vehicle)
+class Car extends Vehicle{
+    // Implementing the abstract method
+    void start(){
+        System.out.println("Car is starting with key");
+    }
+}
+
+
+
+
+
+
+
+
+
+/*abstract class Vehicle {
+    // Abstract method (does not have a body)
+    abstract void start();
+
+    // Concrete method (has a body)
+    void fuelType() {
+        System.out.println("Petrol/Diesel");
+    }
+}
+
+// Subclass (Car) that extends the abstract class
+class Car extends Vehicle {
+
+    @Override
+    void start() {
+        System.out.println("Car is starting with key");
+    }
+}
+
+// Main class to run the program
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.start();
+        c.fuelType();
+    }
+}*/
